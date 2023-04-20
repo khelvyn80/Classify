@@ -1,10 +1,11 @@
-import LecturerSignupPage from "./LecturerSignupPage/LecturerSignupPage";
+import Dashboard from "./Dashboard/dashboard";
+
 
 
 function App() {
   return (
     <div className="App">
-      <LecturerSignupPage />
+      <Dashboard />
     </div>
   );
 }

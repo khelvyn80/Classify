@@ -8,16 +8,25 @@ p {
 }
 
 .dashboard-3 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 393px;
-  height: 852px;
-  box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 1);
-}
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 393px;
+    height: 852px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .dashboard-3 {
+      width: 100%;
+      height: auto;
+      padding: 16px;
+    }
+  }
+  
 .dashboard {
   position: absolute;
   top: 67px;

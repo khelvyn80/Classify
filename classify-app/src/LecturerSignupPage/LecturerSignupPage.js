@@ -1,7 +1,7 @@
 import React from "react"
 import "./LecturerSignupPage.css"
 
-export default function SignUpLecturer() {
+export default function SignupLecturer() {
   return (
     <div className="sign-up-lecturer clip-contents">
       <p className="create-account">Create Account</p>
