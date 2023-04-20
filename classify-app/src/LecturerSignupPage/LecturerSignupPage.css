@@ -1,0 +1,194 @@
+/* Sign up - lecturer */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+p {
+  margin: 0;
+}
+
+.sign-up-lecturer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 393px;
+  height: 852px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 1);
+}
+.create-account {
+  position: absolute;
+  top: 109px;
+  left: 26px;
+  color: rgba(31, 41, 55, 1);
+  font-size: 24px;
+  line-height: 24px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+}
+
+.role {
+  position: absolute;
+  top: 161px;
+  left: 26px;
+  color: rgba(107, 114, 128, 1);
+  font-size: 16px;
+  line-height: 16px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
+.group-624 {
+  position: absolute;
+  top: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 345px;
+  height: 532px;
+  box-sizing: border-box;
+}
+.role-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid rgba(255, 222, 164, 1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255, 249, 236, 1);
+}
+.group-222 {
+  width: 171.5px;
+  height: 100%;
+  padding: 11px 57.5px 19px 57px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(249, 103, 0, 1);
+}
+.lecturer {
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+}
+
+.student {
+  color: rgba(31, 41, 55, 1);
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
+.form-input {
+  width: 100%;
+  height: 44px;
+  padding: 11px 259px 17px 10px;
+  border: 1px solid rgba(255, 222, 164, 1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255, 249, 236, 1);
+}
+.first-name {
+  color: rgba(31, 41, 55, 1);
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
+.form-input-1 {
+  width: 100%;
+  height: 44px;
+  padding: 11px 259px 17px 10px;
+  border: 1px solid rgba(255, 222, 164, 1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255, 249, 236, 1);
+}
+.last-name {
+  color: rgba(31, 41, 55, 1);
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
+.form-input-2 {
+  width: 100%;
+  height: 44px;
+  padding: 11px 283px 17px 10px;
+  border: 1px solid rgba(255, 222, 164, 1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255, 249, 236, 1);
+}
+.staff-id {
+  color: rgba(31, 41, 55, 1);
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
+.form-input-3 {
+  width: 100%;
+  height: 44px;
+  padding: 11px 266px 17px 10px;
+  border: 1px solid rgba(255, 222, 164, 1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255, 249, 236, 1);
+}
+.password {
+  color: rgba(31, 41, 55, 1);
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
+.form-input-4 {
+  width: 100%;
+  height: 44px;
+  padding: 11px 205px 17px 10px;
+  border: 1px solid rgba(255, 222, 164, 1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(255, 249, 236, 1);
+}
+.confirm-password {
+  color: rgba(31, 41, 55, 1);
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+}
+
+.group-8106 {
+  width: fit-content;
+  height: 44px;
+  padding: 10px 138px 18px 143px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgba(249, 103, 0, 1);
+}
+.sign-up {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  line-height: 16px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+}
+
+.already-have-an-account {
+  color: rgba(196, 73, 0, 1);
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+}
