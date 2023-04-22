@@ -1,9 +1,10 @@
 import React from "react"
 import "./LecturerSignupPage.css"
 
-export default function SignupLecturer() {
+const LecturerSignupPage = () => {
   return (
-    <div className="sign-up-lecturer clip-contents">
+    <div className="container">
+    <div className="sign-up-lecturer-container">
       <p className="create-account">Create Account</p>
       <p className="role">Role</p>
       <div className="group-624">
@@ -13,26 +14,21 @@ export default function SignupLecturer() {
           </div>
           <p className="student">Student</p>
         </div>
-        <div className="form-input">
-          <p className="first-name">First name</p>
-        </div>
-        <div className="form-input-1">
-          <p className="last-name">Last Name</p>
-        </div>
-        <div className="form-input-2">
-          <p className="staff-id">Staff ID</p>
-        </div>
-        <div className="form-input-3">
-          <p className="password">Password</p>
-        </div>
-        <div className="form-input-4">
-          <p className="confirm-password">Confirm Password</p>
-        </div>
+          <input className="form-input" placeholder="First Name"/>
+          <input className="form-input-1" placeholder="Last Name"/>
+          <input className="form-input-2" placeholder="Staff ID"/>
+          <input className="form-input-3" placeholder="Password"/>
+          <input className="form-input-4" placeholder="Confirm Password"/>
+          
         <div className="group-8106">
-          <p className="sign-up">Sign Up</p>
+          <button className="sign-up">Sign Up</button>
         </div>
         <p className="already-have-an-account">Already have an account?</p>
-      </div>
+        Confirm Password
+    </div>
+    </div>
     </div>
   )
-}
+};
+
+export default LecturerSignupPage;

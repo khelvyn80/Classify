@@ -4,18 +4,29 @@
 
 p {
   margin: 0;
+
 }
 
-.sign-up-lecturer {
-  position: relative;
+.container {
   display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up-lecturer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   width: 393px;
-  height: 852px;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 1);
+  gap: 5px;
 }
 .create-account {
   position: absolute;
@@ -44,6 +55,7 @@ p {
   top: 192px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: center;
   width: 345px;
   height: 532px;
@@ -168,20 +180,17 @@ p {
   font-weight: 400;
 }
 
-.group-8106 {
-  width: fit-content;
+.sign-up {
   height: 44px;
   padding: 10px 138px 18px 143px;
   border-radius: 4px;
   box-sizing: border-box;
   background-color: rgba(249, 103, 0, 1);
-}
-.sign-up {
-  color: rgba(255, 255, 255, 1);
-  font-size: 16px;
-  line-height: 16px;
   font-family: Poppins, sans-serif;
   font-weight: 500;
+  outline: none;
+  border: none;
+  color: white;
 }
 
 .already-have-an-account {

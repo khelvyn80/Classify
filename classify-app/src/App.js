@@ -1,13 +1,19 @@
-import Dashboard from "./Dashboard/dashboard";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./HomePage/HomePage";
+import LecturerSignupPage from "./LecturerSignupPage/LecturerSignupPage";
 
 
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Dashboard />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="./LecturerSignupPage" element={<HomePage />}>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

@@ -3,7 +3,7 @@ import "./dashboard.css"
 
 export default function Dashboard() {
   return (
-    <div className="dashboard-3 clip-contents">
+    <div className="dashboard-3">
       <p className="dashboard">Dashboard</p>
       <div className="group-359">
         <p className="see-the-list-of-all-venue">
