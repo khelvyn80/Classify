@@ -12,7 +12,7 @@ const HomePage = () => {
               className="logo-image"
             />
             <div className="buttons">
-            <button className="sign-up"><Link to="/LecturerSignupPage">Sign Up</Link></button>
+            <button className="sign-up"><Link to="/signup">Sign Up</Link></button>
               <button className="log-in">Log In</button>
             </div>
           </div>
