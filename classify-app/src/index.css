@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -12,7 +12,7 @@
   --primary-color: #f96700;
   --primary-color-light: #ff9d3f;
   --primary-color-lighter: #ffca7a;
-  --primary-color-lightest: #fff2e6;
+  --primary-color-lightest: #FFF1D2;
   --secondary-color: #ffdeaa;
   --tertiary-color: #fffaec;
   --text-color: #1f2937;
@@ -66,7 +66,7 @@ button {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .container .header {
@@ -143,13 +143,14 @@ button {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  background-color: var(--tertiary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 500px;
   padding: 1rem;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   box-shadow: 0 -10px 30px rgba(0,0,0,0.1);
 }
 
@@ -171,11 +172,12 @@ button {
 }
 
 .back-btn {
-  position: absolute;
-  top: -4rem;
   /* left: 1rem; */
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
   text-decoration: none;
   color: var(--text-color);
   padding: 1rem;
@@ -194,15 +196,123 @@ button {
   justify-content: center;
   gap: 1rem;
   width: 100%;
+  margin-top: 1rem;
 }
 .course-card {
   width: 100%;
-  background-color: red;
-  padding: 1rem;
+  /* background-color: red; */
   border-radius: 0.8793rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
 
+.card-title, .card-body {
+  padding: 1rem;
+}
 
+.course-card .card-title {
+  font-size: 1.3rem;
+  color: var(--text-color-light);
+  background-color: var(--primary-color-lightest);
+}
+
+.course-card .card-title h3 {
+  font-weight: 600;
+}
+
+.course-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.rep-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.rep-details:not(:last-child) {
+  border-bottom: 1px solid var(--primary-color-lightest);
+  margin-bottom: 1rem;
+}
+
+.rep-details button {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  background-color: transparent;
+  color: var(--text-color-light);
+  border-radius: 50%;
+  transition: background-color 0.1s ease;
+}
+
+.rep-details button:hover {
+  background-color: var(--text-color-lightest);
+  color: var(--text-color-light);
+}
+
+.rep-bio-data {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rep-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+
+.rep-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.role {
+  color: var(--primary-color);
+  font-size: 0.75rem;
+}
+
+.course-rep-name {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0001;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: end;
+}
+
+.modal-content {
+  background-color: var(--tertiary-color);
+  padding: 1rem;
+}
+
+.modal-content button:first-child {
+  background-color: #c13c00;
+  color: var(--tertiary-color);
+}
+
+.modal-content button:last-child {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+
+/* Media query for mobile screens (Responsiveness) */
 @media screen and (max-width: 400px) {
   .display-msg .action-btn {
     font-size: 1rem;

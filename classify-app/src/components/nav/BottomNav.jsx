@@ -1,24 +1,31 @@
-export const BottomNav = ({currentScreen}) => {
+import { Link } from "react-router-dom";
+
+/**
+ * @param {string} currentScreen - the current screen
+ * @returns {JSX.Element}
+ */
+export const BottomNav = ({ currentScreen }) => {
 	return (
 		<nav className="bottom-nav">
-			<a
-				href="?"
-				className={`${(currentScreen === "dashboard" && "active")}`}>
+			<Link
+				to="/dashboard"
+				className={`${currentScreen === "dashboard" && "active"}`}>
 				<span className="material-symbols-outlined">grid_view</span>
 				Dashboard
-			</a>
-			<a
-				href="?"
-				className={`${(currentScreen === "feed" && "active")}`}>
+			</Link>
+			<Link
+				to="/browse"
+				className={`${currentScreen === "browse" && "active"}`}>
 				<span className="material-symbols-outlined">feed</span>
 				Browse
-			</a>
-			<a
-				href="?"
-				className={`${(currentScreen === "rep" && "active")}`}>
+			</Link>
+			<Link
+				to="/course_rep"
+				className={`${currentScreen === "rep" && "active"}`}>
 				<span className="material-symbols-outlined">person</span>
 				Reps
-			</a>
+			</Link>
+
 		</nav>
 	);
 };
