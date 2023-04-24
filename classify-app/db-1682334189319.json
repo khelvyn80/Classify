@@ -1,0 +1,42 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "code": "CSC 102",
+      "title": "Introduction to Computer Science",
+      "reps": [
+        {
+          "id": 1,
+          "name": "Kwaku Agyenim Boateng",
+          "imgUrl": "https://i.pravatar.cc/150?img=12",
+          "role": "Main Course Rep"
+        },
+        {
+          "id": 2,
+          "name": "Angela Kuffour",
+          "imgUrl": "https://i.pravatar.cc/150?img=31",
+          "role": "Deputy Course Rep"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "code": "CSC 202",
+      "title": "Data Structures and Algorithms",
+      "reps": [
+        {
+          "id": 1,
+          "name": "Augustine Blewudzi",
+          "imgUrl": "https://i.pravatar.cc/150?img=20",
+          "role": "Main Course Rep"
+        },
+        {
+          "id": 2,
+          "name": "Akosua Priscilla",
+          "imgUrl": " https://i.pravatar.cc/150?img=3 ",
+          "role": "Deputy Course Rep"
+        }
+      ]
+    }
+  ]
+}

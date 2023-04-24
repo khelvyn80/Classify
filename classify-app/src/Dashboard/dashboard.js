@@ -1,7 +1,7 @@
 import React from "react"
 import "./dashboard.css"
 
-export default function Dashboard() {
+export default function dashboard() {
   return (
     <div className="dashboard-3">
       <p className="dashboard">Dashboard</p>
