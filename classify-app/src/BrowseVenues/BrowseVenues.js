@@ -1,5 +1,7 @@
 import React from "react"
+import { useState } from "react";
 import "./BrowseVenues.css"
+import { Link } from "react-router-dom";
 
 export default function BrowseVenues() {
   return (
@@ -78,13 +80,19 @@ export default function BrowseVenues() {
         </div>
       </div>
       <div className="bottom-nav">
-        <div className="dashboard-1">
-          <img
+
+      <div className="dashboard-1">
+        <Link to={"/dashboard"}>
+            <a href="/dashboard">
+                <button>
+                <img
             src="https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/ytci3y8gt3-109%3A276?alt=media&token=55581594-396f-4c59-95f7-6aada475b759"
             alt="Not Found"
             className="layout-grid"
-          />
-          <p className="dashboard">Dashboard</p>
+        />
+                </button>
+              </a>
+            </Link>
         </div>
         <div className="group-1059">
           <div className="group-1">

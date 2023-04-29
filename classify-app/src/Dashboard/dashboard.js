@@ -1,7 +1,10 @@
-import React from "react"
-import "./dashboard.css"
+import React from "react";
+import { useState } from "react";
+import "./dashboard.css";
+import { Link } from "react-router-dom";
 
-export default function dashboard() {
+export default function Dashboard() {
+  // const [role, setRole] = useState("browse");
   return (
     <div className="dashboard-3">
       <p className="dashboard">Dashboard</p>
@@ -124,24 +127,39 @@ export default function dashboard() {
               <p className="dashboard-1">Dashboard</p>
             </div>
           </div>
-          <div className="group-1">
+          <div className="dashboard-browse">
+            <div>
+            <Link to={"/browse_venues"}>
+              <a href="/browse_venues">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/4ypl8mb5xrj-93%3A180?alt=media&token=c7d7f774-5af6-4935-846d-86c0188b85ba"
               alt="Not Found"
               className="newspaper"
-            />
-            <p className="browse">Browse</p>
+              />
+                <button className="browse">
+                  Browse
+                </button>
+              </a>
+            </Link>
+              </div>
           </div>
           <div className="group-2">
+            <div>
+
+            <Link to={`/rep`}>
+              <a href="/rep">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/4ypl8mb5xrj-93%3A175?alt=media&token=e320a690-71e8-47ab-ad1a-c5ded78845c9"
               alt="Not Found"
               className="user"
-            />
-            <p className="reps">Reps</p>
+              />
+              <button className="reps">Reps</button>
+              </a>
+            </Link>
+              </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
