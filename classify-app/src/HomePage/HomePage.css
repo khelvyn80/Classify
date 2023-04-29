@@ -54,9 +54,10 @@ button {
     cursor: pointer;
   }
 .sign-up {
-  background-color: rgba(249, 103, 0, 1);;
-  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(249, 103, 0, 1);
   font-size: 16px;
+  border: 2px solid rgb(255, 136, 0);
   line-height: 16px;
   font-family: Poppins, sans-serif;
   font-weight: 500;
